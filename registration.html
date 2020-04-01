@@ -1,0 +1,213 @@
+<!--18SOECE11014-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="logo/favicon1.png"/>
+		<title>Sign Up</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-select-country.min.css"> -->
+        <style>
+            @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body{
+    background-color: #C7D3D4FF;
+    
+}
+.registration-logo{
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+
+.registration-form{
+	padding: 50px 10px ;
+}
+.with-border{
+    border-bottom: 2px solid #f4f4f4;
+}
+.registration-form form{
+	background-color: #FFF;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+    
+     
+}
+.registration-form .item{
+	border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+
+.registration-form .login-button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: #363636;
+  width: 100%;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.login-button:hover,.login-button:active,.login-button:focus {
+  background: #00001a;
+}
+#A3{
+	margin-top:10px;
+}
+
+@media (max-width: 576px) {
+    .login-form form,
+    .registration-form form{
+        padding: 50px 20px;
+    }
+}
+
+[type=file] {
+    position: absolute;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+input,
+[type=file] + label {
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
+  display: block;
+  border: 1px solid #ced4da;
+  text-align: left;
+  width: 100%;
+  background-clip: padding-box;
+  position: relative;
+}
+[type=file] + label {
+  text-align: left;
+  width: 100%;
+  background-color: #fff;
+  background-clip: padding-box;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+[type=file] + label:hover {
+  background: #3399ff;
+}
+        </style>
+    </head>
+	<body class="bg-img">
+		<div class="registration-form">
+			<form class="A1">
+				<div class="registration-logo with-border">
+					<h1><b>Sign Up</b></h1>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" id="fname" name="fname" class="form-control item" placeholder="First name" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" id="lname" name="lname" class="form-control item" placeholder="Last name" required>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div>
+							<input type="email" id="email" name="email" class="form-control item" placeholder="Enter Email" required>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="password" id="npass" name="npass" class="form-control item" placeholder="Password" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="password" id="cpass" name="cpass" class="form-control item" placeholder="Confirm Password" required>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="number" id="age" name="age" class="form-control item" placeholder="Age" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="date" id="bod" name="bod" class="form-control item" placeholder="Date of Birth" required>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" id="country" name="country" class="form-control item" placeholder="Country" required>
+							<!-- <select class="countrypicker form-control item"></select> -->
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" id="state" name="state" class="form-control item" placeholder="State" required>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="text" id="city" name="city" class="form-control item" placeholder="City" required>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<input type="file" id="pf" name="pf" placeholder="Upload Profile Picture" >
+							<label for="pf">Upload Profile Picture</label>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<textarea class="form-control item" placeholder="Enter Note."></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<button type="submit" name="submit" class="btn btn-block login-button">Register</button>
+					</div>
+				</div>
+				<div class="form-group">
+					<a href="index.php" class="text-center" ><h4 id="A3"><b>I already have a Register</b></h4></a>
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript">
+			$("[type=file]").on("change", function(){
+			// Name of file and placeholder
+			var file = this.files[0].name;
+			var dflt = $(this).attr("placeholder");
+			if($(this).val()!=""){
+				$(this).next().text(file);
+			} else {
+				$(this).next().text(dflt);
+			}
+			});
+		</script>
+		<!-- <script type="text/javascript" src="js/bootstrap-select-country.min.js"></script> -->
+	</body>
+</html>
+<!--18SOECE11014-->
